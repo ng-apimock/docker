@@ -8,7 +8,10 @@
         "email": "mischa@dasberg.nl"
     },
     "scripts": {
-        "start": "node serve.js"
+        "start": "node serve.js",
+        "build": "docker build --file=Dockerfile . -t ngapimock/standalone",
+        "prerelease": "npm run build",
+        "release": "docker push ngapimock/standalone"
     },
     "repository": {
         "type": "git",

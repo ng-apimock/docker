@@ -1,0 +1,9 @@
+orbs:
+  docker: circleci/docker@1.0.1
+version: 2.1
+workflows:
+  build:
+    jobs:
+      - docker/publish:
+          deploy: false
+          image: ngapimock/standalone
