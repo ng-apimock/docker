@@ -31,8 +31,8 @@
         "api"
     ],
     "dependencies": {
-        "@ng-apimock/core": "^1.0.25",
-        "@ng-apimock/dev-interface": "^1.0.7",
-        "express": "^4.17.1"
+        "@ng-apimock/core": "2.3.2",
+        "@ng-apimock/dev-interface": "1.0.7",
+        "express": "4.17.1"
     }
 }
