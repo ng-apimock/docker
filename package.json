@@ -9,9 +9,7 @@
     },
     "scripts": {
         "serve": "node serve.js",
-        "build": "docker build --file=Dockerfile . -t ngapimock/standalone",
-        "prerelease": "yarn build",
-        "release": "docker push ngapimock/standalone"
+        "build": "docker build --file=Dockerfile . -t ngapimock/standalone"
     },
     "repository": {
         "type": "git",

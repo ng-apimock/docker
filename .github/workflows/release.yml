@@ -16,8 +16,19 @@ jobs:
           registry-url: https://registry.npmjs.org
       - name: install
         run: yarn install --frozen-lockfile
-      - name: release
-        run: yarn release
+      - name: build
+        run: yarn build
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Build and push
+        id: docker_build
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: ngapimock/standalone:latest
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
