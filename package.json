@@ -1,16 +1,16 @@
 {
     "name": "@ng-apimock/docker",
     "description": "Standalone setup for @ng-apimock/core",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "homepage": "https://github.com/ng-apimock/docker#readme",
     "author": {
         "name": "Mischa Dasberg",
         "email": "mischa@dasberg.nl"
     },
     "scripts": {
-        "start": "node serve.js",
+        "serve": "node serve.js",
         "build": "docker build --file=Dockerfile . -t ngapimock/standalone",
-        "prerelease": "npm run build",
+        "prerelease": "yarn build",
         "release": "docker push ngapimock/standalone"
     },
     "repository": {
@@ -31,8 +31,12 @@
         "api"
     ],
     "dependencies": {
-        "@ng-apimock/core": "2.3.2",
-        "@ng-apimock/dev-interface": "1.0.7",
+        "@ng-apimock/core": "3.4.0",
+        "@ng-apimock/dev-interface": "3.1.0",
         "express": "4.17.1"
+    },
+    "devDependencies": {
+        "fs-extra": "10.0.0",
+        "http-proxy-middleware": "2.0.1"
     }
 }

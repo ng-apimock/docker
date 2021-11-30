@@ -4,8 +4,8 @@ COPY . /opt/ngapimock
 
 WORKDIR /opt/ngapimock
 
-RUN npm i
+RUN yarn install
 
 EXPOSE 3000
 
-ENTRYPOINT ["npm", "start"]
+ENTRYPOINT ["yarn", "serve"]
