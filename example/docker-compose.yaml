@@ -11,3 +11,4 @@ services:
     volumes:
       - ./mocks:/opt/ngapimock/mocks
       - ./extension.js:/opt/ngapimock/extension.js
+      - ./configuration.json:/opt/ngapimock/configuration.json

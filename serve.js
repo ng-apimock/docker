@@ -8,7 +8,13 @@ const app = express();
 app.set('port', 3000);
 
 // Process the test application mocks
-apimock.processor.process({src: 'mocks', watch: true});
+if(fs.existsSync(path.join(process.cwd(), 'configuration.json'))) {
+    const configuration = require(path.join(process.cwd(), 'configuration.json'));
+    apimock.processor.process(configuration);
+} else {
+    const configuration = {src: 'mocks', watch: true};
+    apimock.processor.process(configuration);
+}
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
