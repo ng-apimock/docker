@@ -29,11 +29,9 @@
         "api"
     ],
     "dependencies": {
-        "@ng-apimock/core": "3.11.0",
+        "@ng-apimock/core": "3.11.2",
         "@ng-apimock/dev-interface": "3.2.1",
-        "express": "4.18.2"
-    },
-    "devDependencies": {
+        "express": "4.18.2",
         "fs-extra": "11.1.1",
         "http-proxy-middleware": "2.0.6"
     }
