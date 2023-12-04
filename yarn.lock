@@ -17,10 +17,10 @@
     reflect-metadata "0.1.13"
     uuid "9.0.0"
 
-"@ng-apimock/dev-interface@3.2.1":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@ng-apimock/dev-interface/-/dev-interface-3.2.1.tgz#c0f13e2149de7e5e10cf067c85a1739a7ae1269f"
-  integrity sha512-nHfzXRFL5+4JmuRDP/Vi21HmTu/A5ZZ43T8RK0TjmF9fWtd7qCeefBA3TkTOE+aD5oJDzYrdJii+Yd3bEK40Tg==
+"@ng-apimock/dev-interface@3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@ng-apimock/dev-interface/-/dev-interface-3.3.1.tgz#2609600d7febde2d9f4be3761f69cded6ad67101"
+  integrity sha512-s70TcD1nCCmz+kqVhRueEFJrFIS9FV0DdZIEMKi/Ro69xjbyNsAYPEQ7wKgkkO5iEdln4zuymrjj695dzguUfw==
 
 "@types/http-proxy@^1.17.8":
   version "1.17.14"
@@ -302,6 +302,15 @@ fs-extra@11.1.1:
   version "11.1.1"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-11.1.1.tgz#da69f7c39f3b002378b0954bb6ae7efdc0876e2d"
   integrity sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==
+  dependencies:
+    graceful-fs "^4.2.0"
+    jsonfile "^6.0.1"
+    universalify "^2.0.0"
+
+fs-extra@11.2.0:
+  version "11.2.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-11.2.0.tgz#e70e17dfad64232287d01929399e0ea7c86b0e5b"
+  integrity sha512-PmDi3uwK5nFuXh7XDTlVnS17xJS7vW36is2+w3xcv8SVxiB4NyATf4ctkVY5bkSjX0Y4nbvZCq1/EjtEyr9ktw==
   dependencies:
     graceful-fs "^4.2.0"
     jsonfile "^6.0.1"
