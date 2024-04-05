@@ -1,7 +1,7 @@
 {
     "name": "@ng-apimock/docker",
     "description": "Standalone setup for @ng-apimock/core",
-    "version": "3.0.0",
+    "version": "3.1.0",
     "homepage": "https://github.com/ng-apimock/docker#readme",
     "author": {
         "name": "Mischa Dasberg",
@@ -9,7 +9,8 @@
     },
     "scripts": {
         "serve": "node serve.js",
-        "build": "docker build --file=Dockerfile . -t ngapimock/standalone"
+        "build": "docker build --file=Dockerfile . -t ngapimock/standalone:$npm_package_version",
+        "semantic-release": "semantic-release"
     },
     "repository": {
         "type": "git",
@@ -29,10 +30,27 @@
         "api"
     ],
     "dependencies": {
-        "@ng-apimock/core": "3.11.2",
+        "@ng-apimock/core": "3.12.0",
         "@ng-apimock/dev-interface": "3.3.1",
-        "express": "4.18.2",
+        "express": "4.19.2",
         "fs-extra": "11.2.0",
-        "http-proxy-middleware": "2.0.6"
+        "http-proxy-middleware": "3.0.0"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "19.2.1",
+        "@commitlint/config-conventional": "19.1.0",
+        "@semantic-release/changelog": "6.0.3",
+        "@semantic-release/commit-analyzer": "12.0.0",
+        "@semantic-release/git": "10.0.1",
+        "@semantic-release/github": "10.0.2",
+        "@semantic-release/npm": "12.0.0",
+        "@semantic-release/release-notes-generator": "13.0.0",
+        "commitizen": "4.3.0",
+        "semantic-release": "23.0.7"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
     }
 }

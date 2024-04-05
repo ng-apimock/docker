@@ -5,9 +5,7 @@ services:
     image: ngapimock/standalone:latest
     restart: always
     ports:
-      - '3000:3000'
-    expose:
-      - '3000'
+      - '0.0.0.0:4000:3000'
     volumes:
       - ./mocks:/opt/ngapimock/mocks
       - ./extension.js:/opt/ngapimock/extension.js
