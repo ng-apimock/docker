@@ -40,4 +40,3 @@ app.listen(app.get('port'), function () {
 if (fs.existsSync(path.join(process.cwd(), 'extension.js'))) {
     require(path.join(process.cwd(), 'extension')).extend(app);
 }
-
