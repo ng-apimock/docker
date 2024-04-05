@@ -21,14 +21,21 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: package version
+        id: get-version
+        uses: beaconbrigade/package-json-version@v0.3
+        with:
+          path: .
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v3
         with:
           context: .
           push: true
-          tags: ngapimock/standalone:latest
+          tags: ngapimock/standalone:${{ steps.get-version.outputs.version }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: publish
+        run: yarn semantic-release

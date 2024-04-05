@@ -1,0 +1,12 @@
+{
+  "src": "mocks",
+  "patterns": {
+    "mocks": "**/*.mock.json",
+    "presets": "**/*.preset.json"
+  },
+  "watches": {
+    "mocks": "**/*.mock.json",
+    "presets": "**/*.preset.json"
+  },
+  "watch": true
+}
