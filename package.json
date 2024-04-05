@@ -1,7 +1,7 @@
 {
     "name": "@ng-apimock/docker",
     "description": "Standalone setup for @ng-apimock/core",
-    "version": "3.1.0",
+    "version": "3.2.0",
     "homepage": "https://github.com/ng-apimock/docker#readme",
     "author": {
         "name": "Mischa Dasberg",
