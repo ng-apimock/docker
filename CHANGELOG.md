@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.5.0](https://github.com/ng-apimock/docker/compare/v3.4.0...v3.5.0) (2024-04-06)
+
+
+### Features
+
+* docker platforms ([457c3c4](https://github.com/ng-apimock/docker/commit/457c3c4ad614f5cf15f2967515f49606270cb5ac))
+
 # [3.4.0](https://github.com/ng-apimock/docker/compare/v3.3.0...v3.4.0) (2024-04-06)
 
 
