@@ -285,10 +285,10 @@
     reflect-metadata "0.2.2"
     uuid "9.0.1"
 
-"@ng-apimock/dev-interface@3.3.1":
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/@ng-apimock/dev-interface/-/dev-interface-3.3.1.tgz#2609600d7febde2d9f4be3761f69cded6ad67101"
-  integrity sha512-s70TcD1nCCmz+kqVhRueEFJrFIS9FV0DdZIEMKi/Ro69xjbyNsAYPEQ7wKgkkO5iEdln4zuymrjj695dzguUfw==
+"@ng-apimock/dev-interface@3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@ng-apimock/dev-interface/-/dev-interface-3.4.0.tgz#3feba11feb750d15561100c0536252be509f8eec"
+  integrity sha512-L38+49AMuhkOee0g7cbeIAzqMU9yb2HrW+/+xK5oRzSqbkLM9gngvFCQg3TiY9j0u/ermxh/orVNQW1EmVPsdw==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -536,6 +536,13 @@
   dependencies:
     "@octokit/types" "^12.6.0"
 
+"@octokit/plugin-paginate-rest@^11.0.0":
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/@octokit/plugin-paginate-rest/-/plugin-paginate-rest-11.0.0.tgz#ecf50fc245451d3231d308b29074e95bff54ed90"
+  integrity sha512-HLz6T9HWeNkX3SVqc7FUYlh+TAg3G7gCc1MGuNcov8mSrFU9dc4ABmRmgqR9TsY1doUx42vLN5UxxWlnqBX8xw==
+  dependencies:
+    "@octokit/types" "^13.0.0"
+
 "@octokit/plugin-retry@^7.0.0":
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/@octokit/plugin-retry/-/plugin-retry-7.1.0.tgz#5b949e4c31db59b77eeb37d020fef251a503fcb6"
@@ -657,7 +664,29 @@
     micromatch "^4.0.0"
     p-reduce "^2.0.0"
 
-"@semantic-release/github@10.0.2", "@semantic-release/github@^10.0.0":
+"@semantic-release/github@10.0.3":
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-10.0.3.tgz#62cee761bdfa17a007cdb86f66ffb729ae95ca50"
+  integrity sha512-nSJQboKrG4xBn7hHpRMrK8lt5DgqJg50ZMz9UbrsfTxuRk55XVoQEadbGZ2L9M0xZAC6hkuwkDhQJKqfPU35Fw==
+  dependencies:
+    "@octokit/core" "^6.0.0"
+    "@octokit/plugin-paginate-rest" "^11.0.0"
+    "@octokit/plugin-retry" "^7.0.0"
+    "@octokit/plugin-throttling" "^9.0.0"
+    "@semantic-release/error" "^4.0.0"
+    aggregate-error "^5.0.0"
+    debug "^4.3.4"
+    dir-glob "^3.0.1"
+    globby "^14.0.0"
+    http-proxy-agent "^7.0.0"
+    https-proxy-agent "^7.0.0"
+    issue-parser "^7.0.0"
+    lodash-es "^4.17.21"
+    mime "^4.0.0"
+    p-filter "^4.0.0"
+    url-join "^5.0.0"
+
+"@semantic-release/github@^10.0.0":
   version "10.0.2"
   resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-10.0.2.tgz#f889012df6b70043fb3502b13ff67ffcf52bd724"
   integrity sha512-SP5ihhv/uQa8vPuWKmbJrrzfv8lRUkDFC6qwgaWoorrflN1DEW0IGCa9w/PxUp8Ad3dbvXZPmpXdGiP3eyTzhg==
