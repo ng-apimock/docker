@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.7.0](https://github.com/ng-apimock/docker/compare/v3.6.0...v3.7.0) (2024-06-11)
+
+
+### Features
+
+* update @ng-apimock/dev-interface ([e498227](https://github.com/ng-apimock/docker/commit/e498227220e940e394c7883e2af07b7187880f6e))
+* update @ng-apimock/dev-interface ([4eed013](https://github.com/ng-apimock/docker/commit/4eed013807b931d5d58c84d98fe9d799b6509931))
+
 # [3.6.0](https://github.com/ng-apimock/docker/compare/v3.5.0...v3.6.0) (2024-04-07)
 
 
